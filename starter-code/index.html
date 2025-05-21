@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Password generator app</title>
 </head>
@@ -12,19 +13,19 @@
     <p class="title">Password Generator</p>
     <div class="password">
       <span class="password-text">P4$5W0rD!</span>
-      <img src="./assets/images/icon-copy.svg" alt="copy">
+      <img id="copy" src="./assets/images/icon-copy.svg" alt="copy">
     </div>
     <div class="gen">
       <div class="length">
         <p>Character Length</p>
         <span id="num" class="num">0</span>
       </div>
-      <input type="range" min="1" max="20" value="12">
+      <input type="range" min="0" max="20" value="0">
       <div class="condition">
-        <span><input type="checkbox" name="include" value="uppercase">  Include Uppercase Letters</span>
-        <span><input type="checkbox" name="include" value="lowercase">  Include Lowercase Letters</span>
-        <span><input type="checkbox" name="include" value="numbers">  Include Numbers</span>
-        <span><input type="checkbox" name="include" value="symbols">  Include Symbols</span>
+        <span><input type="checkbox" name="include" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">  Include Uppercase Letters</span>
+        <span><input type="checkbox" name="include" value="abcdefghijklmnopqrstuvwxyz">  Include Lowercase Letters</span>
+        <span><input type="checkbox" name="include" value="0123456789">  Include Numbers</span>
+        <span><input type="checkbox" name="include" value="!@#$%^&*()_+[]{}|;:,.<>?">  Include Symbols</span>
       </div>
       <div class="strength">
         <label>STRENGTH</label>
