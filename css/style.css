@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4b4545;
+    color: white;
+}
+
+main {
+    margin: 4em auto;
+    padding: 1em;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+}
+
+.password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #635e5e;
+}
+
+.password .password-text {
+    opacity: 0.3;
+}
+
+.password .copy {
+    margin-left: auto;
+}
+
+.gen {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: #635e5e;
+}
+
+.gen .length {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.gen input[type="range"] {
+    width: 100%;
+    height: 10px;
+    background: #080808;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+/* 
+.gen input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 5px;
+    background: #c0baba;
+    border-radius: 50%;
+} */
+
+.gen .condition {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gen .condition input[type="checkbox"] {
+    padding: 1em;
+}
+
+.gen .strength {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em 1em;
+    align-items: center;
+    margin: 1em 0;
+    background-color: rgb(48, 44, 44);
+}
+
+.gen .length .num {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #6ddd93;
+}
+
+.gen .strength label{
+    opacity: 0.5;
+}
+
+.gen .strength-rect {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3em;
+    margin: 1em 0;
+}
+
+.gen .strength .rect {
+    width: 5px;
+    height: 15px;
+    border: 1px solid white;
+}
+
+.gen button {
+    width: 100%;
+    padding: 1em 0;
+    background-color: #6ddd93;
+    border: none;
+}
+
+.gen button:hover {
+    background-color: #5cdb84;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
