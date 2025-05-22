@@ -35,8 +35,12 @@ main {
     opacity: 0.3;
 }
 
-.password .copy {
+.password #copy {
     margin-left: auto;
+}
+
+.password #copy:hover {
+    cursor: pointer;
 }
 
 .gen {
@@ -74,15 +78,39 @@ main {
     gap: 1em;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
 }
 
 .gen .condition input[type="checkbox"] {
-    padding: 1em;
+    /* padding: 1em; */
+    appearance: none; /* 隐藏原生外观 */
+    width: 1em;
+    height: 1em;
+    border: 1px solid #c0baba;
+    position: relative;
 }
+
+.gen .condition input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../starter-code/assets/images/icon-check.svg");
+    background-color: #5cdb84;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.gen .condition input[type="checkbox"]:checked:after {
+    display: block;
+}
+
 
 .gen .strength {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; 
     padding: 0.3em 1em;
     align-items: center;
     margin: 1em 0;
@@ -95,15 +123,17 @@ main {
     color: #6ddd93;
 }
 
-.gen .strength label{
+.gen .strength .tip{
     opacity: 0.5;
+    margin-right: auto;
 }
 
 .gen .strength-rect {
     display: flex;
     flex-direction: row;
     gap: 0.3em;
-    margin: 1em 0;
+    margin: 1em 0 1em 1em;
+
 }
 
 .gen .strength .rect {
